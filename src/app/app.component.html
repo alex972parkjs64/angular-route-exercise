@@ -1,2 +1,10 @@
-<a routerLink="/">Home</a>
+<a [routerLink]="['/']">DEFAULT</a>
+<br />
+<a [routerLink]="[ROUTER_TOKENS.HOME]">Home</a>
+<br />
+<a [routerLink]="[ROUTER_TOKENS.SHOP]">Shop</a>
+<br />
+<a [routerLink]="[ROUTER_TOKENS.CONTACT]">Contact</a>
+<br />
+<a [routerLink]="[ROUTER_TOKENS.ABOUT]">About</a>
 <router-outlet />
