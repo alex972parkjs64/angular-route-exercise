@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-pie',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './pie.component.html',
   styleUrl: './pie.component.css'
 })

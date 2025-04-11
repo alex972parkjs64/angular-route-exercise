@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 
 import { ROUTER_TOKENS } from './shop.routes';
 
 @Component({
   selector: 'app-shop',
-  imports: [RouterOutlet ,RouterLink],
+  imports: [RouterOutlet ,RouterLink, RouterModule],
   templateUrl: './shop.component.html',
   styleUrl: './shop.component.css'
 })
