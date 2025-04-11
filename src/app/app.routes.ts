@@ -19,7 +19,8 @@ export const ROUTES: Routes = [
     },
     {
         path: ROUTER_TOKENS.SHOP,
-        component: ShopComponent
+        component: ShopComponent,
+        loadChildren: () => import('./shop/shop.routes').then(m => m.ROUTES)
     },
     {
         path: ROUTER_TOKENS.CONTACT,
